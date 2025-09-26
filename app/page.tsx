@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Brain, Zap, Building, Wrench, CheckCircle } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 
 export default function HomePage() {
@@ -58,25 +58,25 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <DivisionCard
-              icon={<Brain className="h-8 w-8 text-primary group-hover:text-accent transition-colors" />}
+              icon={<Image src="/images/aeon-icon.png" alt="AEON Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="AEON"
               subtitle="The Advanced Efficient Optimized Network"
               description="AI operating system + automation brain powering intelligent decision-making across all divisions."
             />
             <DivisionCard
-              icon={<Zap className="h-8 w-8 text-primary group-hover:text-accent transition-colors" />}
+              icon={<Image src="/images/atom-icon.png" alt="ATOM Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="ATOM"
               subtitle="Arbitrage Trustless On-chain Module"
               description="Advanced arbitrage + high-frequency trading engine leveraging market inefficiencies."
             />
             <DivisionCard
-              icon={<Building className="h-8 w-8 text-primary group-hover:text-accent transition-colors" />}
+              icon={<Image src="/images/vulpine-icon.png" alt="Vulpine Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="Vulpine"
               subtitle="Contracting + Lead Generation"
               description="Strategic contracting arm with advanced lead generation systems and client acquisition."
             />
             <DivisionCard
-              icon={<Wrench className="h-8 w-8 text-primary group-hover:text-accent transition-colors" />}
+              icon={<Image src="/images/refacekit-icon.png" alt="RefaceKit Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="RefaceKit"
               subtitle="Manufacturing + Cabinetry"
               description="Manufacturing division specializing in cabinetry refacing — our proven case study in scalable operations."

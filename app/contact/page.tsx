@@ -194,7 +194,7 @@ export default function ContactPage() {
             <InfoCard
               icon={<Phone className="h-5 w-5 text-accent" />}
               title="Phone"
-              text="Twilio number (to be inserted)"
+              text="480-364-8205"
             />
           </div>
         </div>

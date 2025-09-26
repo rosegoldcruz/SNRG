@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Brain, Zap, Building, Wrench, Shield, Lightbulb, TrendingUp, Users } from "lucide-react"
+import { Shield, Lightbulb, TrendingUp, Users } from "lucide-react"
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -72,22 +72,22 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Our Divisions</h2>
           <div className="space-y-8">
             <DivisionCard
-              icon={<Brain className="h-12 w-12 text-primary" />}
+              icon={<Image src="/images/aeon-icon.png" alt="AEON Icon" width={48} height={48} />}
               title="AEON"
               subtitle="The Advanced Efficient Optimized Network"
               text="Our AI operating system — the brain behind everything. AEON orchestrates automation, insight, and execution across all divisions." />
             <DivisionCard
-              icon={<Zap className="h-12 w-12 text-primary" />}
+              icon={<Image src="/images/atom-icon.png" alt="ATOM Icon" width={48} height={48} />}
               title="ATOM"
               subtitle="Arbitrage Trustless On-chain Module"
               text="Our high-frequency trading and arbitrage engine. ATOM identifies inefficiencies across DeFi and TradFi — and executes with precision." />
             <DivisionCard
-              icon={<Building className="h-12 w-12 text-primary" />}
+              icon={<Image src="/images/vulpine-icon.png" alt="Vulpine Icon" width={48} height={48} />}
               title="Vulpine"
               subtitle="Contracting + Lead Generation"
               text="Our contracting arm and sales engine. Vulpine builds pipelines, connects opportunities, and scales compliant acquisition systems." />
             <DivisionCard
-              icon={<Wrench className="h-12 w-12 text-primary" />}
+              icon={<Image src="/images/refacekit-icon.png" alt="RefaceKit Icon" width={48} height={48} />}
               title="RefaceKit"
               subtitle="Manufacturing + Cabinetry"
               text="Our proof-of-concept in physical industries. RefaceKit shows how systematic innovation transforms traditional manufacturing." />
