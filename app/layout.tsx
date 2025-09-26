@@ -9,10 +9,25 @@ import { Footer } from "@/components/footer"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "SNRG Labs LLC - Strategic Network Revenue Growth",
+  title: "SNRG Labs LLC - Enterprise Telephony & AI Automation Platform",
   description:
-    "AI + Automation · Arbitrage & High-Frequency Trading · Contracting & Manufacturing - It all starts in the Lab",
+    "B2B SaaS platform providing compliant business communications for contractors, manufacturers, and service providers. Appointment confirmations, customer notifications, and lead alerts for enterprise clients.",
   generator: "SNRG Labs LLC",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+    viewportFit: "cover"
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "SNRG Labs"
+  },
+  formatDetection: {
+    telephone: false
+  }
 }
 
 export default function RootLayout({
@@ -22,6 +37,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#000000" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="SNRG Labs" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="apple-touch-icon" href="/images/snrg-logo.png" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body
         className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}
       >
@@ -32,9 +56,18 @@ export default function RootLayout({
             muted
             loop
             playsInline
+            preload="metadata"
             className="w-full h-full object-cover brightness-75"
+            style={{
+              WebkitTransform: "translateZ(0)",
+              transform: "translateZ(0)",
+              WebkitBackfaceVisibility: "hidden",
+              backfaceVisibility: "hidden"
+            }}
           >
             <source src="/dynam-background.mp4" type="video/mp4" />
+            {/* Fallback for very old browsers */}
+            <div className="w-full h-full bg-gradient-to-br from-blue-900 via-black to-green-900" />
           </video>
         </div>
 

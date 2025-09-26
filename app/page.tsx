@@ -37,8 +37,7 @@ export default function HomePage() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="px-8 py-4 text-lg font-semibold border-white/50 text-white hover:bg-white/10"
+              className="bg-black hover:bg-black/80 text-white border border-white/20 px-8 py-4 text-lg font-semibold"
               asChild
             >
               <a href="/about">Learn More</a>
