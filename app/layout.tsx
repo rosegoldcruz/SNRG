@@ -23,13 +23,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+        {/* Fullscreen Video Background */}
         <div className="fixed inset-0 z-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-            <source src="/placeholder.mp4" type="video/mp4" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="/dynam-background.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-slate-900/40" />
         </div>
 
+        {/* Foreground Content */}
         <div className="relative z-10">
           <Navigation />
           <Suspense>
@@ -37,6 +44,7 @@ export default function RootLayout({
           </Suspense>
           <Footer />
         </div>
+
         <Analytics />
       </body>
     </html>
