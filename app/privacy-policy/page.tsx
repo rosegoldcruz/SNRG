@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
             <Image src="/images/snrg-logo.png" alt="SNRG Labs Logo" width={80} height={80} className="rounded-full" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
-          <p className="text-white/80">Last updated: January 2025</p>
+          <p className="text-white/80">Last updated: September 22, 2025</p>
         </div>
 
         <Card className="glass-effect border-white/20">
