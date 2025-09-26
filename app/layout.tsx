@@ -22,15 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body
+        className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}
+      >
         {/* Fullscreen Video Background */}
-        <div className="fixed inset-0 z-0">
+        <div className="fixed inset-0 -z-10">
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-75"
           >
             <source src="/dynam-background.mp4" type="video/mp4" />
           </video>

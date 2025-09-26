@@ -1,12 +1,9 @@
-
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
-/* === BRANDING COLORS ===
-   Deep blue + charcoal + neon green accent
-   Balanced for dark/light + glassmorphism */
+/* === BRANDING COLORS === */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.12 0 0);
@@ -104,12 +101,19 @@
 /* === HEADERS === */
 h1, h2, h3 {
   letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 h1 {
   @apply font-extrabold;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 h2 {
   @apply font-bold;
+}
+
+/* === BODY TEXT === */
+p, span, li {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* === ANIMATIONS === */
@@ -119,4 +123,10 @@ h2 {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* === FIX: Ensure content always above video === */
+section, header, footer, main, .glass-effect {
+  position: relative;
+  z-index: 10;
 }
