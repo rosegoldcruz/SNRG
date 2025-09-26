@@ -91,7 +91,7 @@ export default function TheLabPage() {
           <h2 className="text-4xl font-bold text-white text-center mb-14">Proven Capabilities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <CredibilityCard
-              title="10+ Years Combined Experience"
+              title="33+ Years Combined Experience"
               text="Expertise spanning AI systems, call center operations, and financial markets."
             />
             <CredibilityCard
@@ -143,7 +143,7 @@ export default function TheLabPage() {
 /* === Helper Components === */
 function InfoCard({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
   return (
-    <Card className="glass-effect border-accent/30 hover:border-accent/60 transition-colors duration-300">
+    <Card className="glass-effect border-accent/30 hover:border-accent/60 transition-colors duration-300 hover-lift">
       <CardContent className="p-8 text-center space-y-4">
         <div className="flex justify-center">
           <div className="p-3 rounded-full bg-accent/20">{icon}</div>
@@ -157,7 +157,7 @@ function InfoCard({ icon, title, text }: { icon: React.ReactNode; title: string;
 
 function CredibilityCard({ title, text }: { title: string; text: string }) {
   return (
-    <Card className="glass-effect border-white/20 hover:border-accent/30 transition-colors duration-300">
+    <Card className="glass-effect border-white/20 hover:border-accent/30 transition-colors duration-300 hover-lift">
       <CardContent className="p-6 flex items-start space-x-4">
         <div className="flex-shrink-0 mt-1">
           <CheckCircle className="h-6 w-6 text-accent" />

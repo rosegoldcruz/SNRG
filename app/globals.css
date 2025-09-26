@@ -138,6 +138,25 @@ section, header, footer, main, .glass-effect {
   z-index: 10;
 }
 
+/* === HOVER EFFECTS FOR CARDS === */
+.hover-lift {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Enhanced glass effect on hover */
+.hover-lift:hover.glass-effect {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+}
+
 /* === iOS SAFARI OPTIMIZATIONS === */
 @supports (-webkit-touch-callout: none) {
   /* iOS Safari specific styles */

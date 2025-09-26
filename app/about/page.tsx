@@ -100,7 +100,7 @@ export default function AboutPage() {
 /* === Helper Components === */
 function ValueCard({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
   return (
-    <Card className="glass-effect border-white/20 hover:border-accent/50 transition-all duration-300">
+    <Card className="glass-effect border-white/20 hover:border-accent/50 transition-all duration-300 hover-lift">
       <CardContent className="p-6 text-center space-y-4">
         <div className="flex justify-center">
           <div className="p-3 rounded-full bg-accent/20">{icon}</div>
@@ -124,7 +124,7 @@ function DivisionCard({
   text: string
 }) {
   return (
-    <Card className="glass-effect border-white/20 hover:border-accent/50 transition-all duration-300">
+    <Card className="glass-effect border-white/20 hover:border-accent/50 transition-all duration-300 hover-lift">
       <CardContent className="p-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
           <div className="flex justify-center lg:justify-start">

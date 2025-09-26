@@ -89,7 +89,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-12">Why Trust SNRG Labs?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <CredibilityCard title="10+ Years Combined Experience" text="Deep expertise across AI, call center operations, and financial markets." />
+            <CredibilityCard title="33+ Years Combined Experience" text="Deep expertise across AI, call center operations, and financial markets." />
             <CredibilityCard title="TCPA-Compliant Infrastructure" text="Fully compliant outbound communication systems with built-in regulatory safeguards." />
             <CredibilityCard title="Verified Twilio A2P Partner" text="Certified A2P/10DLC setup ensuring reliable, compliant messaging capabilities." />
             <CredibilityCard title="Multi-Division Execution" text="Proven track record across AI, arbitrage, contracting, and manufacturing sectors." />
@@ -131,7 +131,7 @@ export default function HomePage() {
 /* Helper Components */
 function DivisionCard({ icon, title, subtitle, description }: { icon: React.ReactNode; title: string; subtitle: string; description: string }) {
   return (
-    <Card className="glass-effect border-white/20 hover:border-accent/50 transition-all duration-300 group">
+    <Card className="glass-effect border-white/20 hover:border-accent/50 transition-all duration-300 group hover-lift">
       <CardContent className="p-6 text-center space-y-4">
         <div className="flex justify-center">
           <div className="p-3 rounded-full bg-primary/20 group-hover:bg-accent/20 transition-colors">{icon}</div>
@@ -146,7 +146,7 @@ function DivisionCard({ icon, title, subtitle, description }: { icon: React.Reac
 
 function CredibilityCard({ title, text }: { title: string; text: string }) {
   return (
-    <Card className="glass-effect border-white/20">
+    <Card className="glass-effect border-white/20 hover-lift">
       <CardContent className="p-6 flex items-start space-x-4">
         <div className="flex-shrink-0 mt-1">
           <CheckCircle className="h-6 w-6 text-accent" />
