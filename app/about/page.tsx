@@ -13,8 +13,8 @@ export default function AboutPage() {
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">About SNRG Labs</h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Founded in 2025 in Sheridan, Wyoming — SNRG Labs LLC is the parent company architecting a new era of
-            Strategic Network Revenue Growth. We don’t just adapt to industries — we rewire them.
+            Founded in 2025 in Sheridan, Wyoming — SNRG Labs LLC is a B2B SaaS platform providing enterprise telephony and AI automation solutions.
+            We empower contractors, manufacturers, and service providers with compliant communication systems.
           </p>
         </div>
       </section>
@@ -27,18 +27,17 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Mission</h2>
                 <p className="text-lg text-white/80 mb-6">
-                  To design and deploy scalable systems that connect AI, finance, manufacturing, contracting, telephony, media and logistics into
-                  one unified growth engine. We don’t make side projects — we build infrastructures that last.
+                  To provide enterprise-grade telephony, CRM, and AI automation solutions that enable businesses to scale their communication systems
+                  while maintaining full TCPA compliance. We build the infrastructure that powers growth.
                 </p>
                 <p className="text-lg text-white/80">
-                  Each division of SNRG Labs is both independent and interconnected, engineered to reinforce one another
-                  and amplify results across every vertical we touch.
+                  Our platform modules work together to deliver appointment confirmations, customer notifications, and lead alerts
+                  for enterprise clients across multiple industries.
                 </p>
               </div>
               <div className="flex justify-center">
                 <Image
                   src="/images/snrg-logo.png"
-                  alt="SNRG Labs Mission"
                   width={220}
                   height={220}
                   className="rounded-full opacity-90"
@@ -69,28 +68,28 @@ export default function AboutPage() {
       {/* Divisions Section */}
       <section className="px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Our Divisions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Our Platform Modules</h2>
           <div className="space-y-8">
             <DivisionCard
               icon={<Image src="/images/aeon-icon.png" alt="AEON Icon" width={48} height={48} />}
               title="AEON"
               subtitle="The Advanced Efficient Optimized Network"
-              text="Our AI operating system — the brain behind everything. AEON orchestrates automation, insight, and execution across all divisions." />
+              text="Our enterprise AI automation platform — the brain behind client communication workflows. AEON orchestrates intelligent messaging and automation for our SaaS clients." />
             <DivisionCard
               icon={<Image src="/images/atom-icon.png" alt="ATOM Icon" width={48} height={48} />}
               title="ATOM"
-              subtitle="Arbitrage Trustless On-chain Module"
-              text="Our high-frequency trading and arbitrage engine. ATOM identifies inefficiencies across DeFi and TradFi — and executes with precision." />
+              subtitle="Analytics & Optimization Module (Internal Case Study)"
+              text="Our internal case study for financial sector implementations. ATOM demonstrates our platform's capabilities in data analytics and optimization for enterprise clients." />
             <DivisionCard
               icon={<Image src="/images/vulpine-icon.png" alt="Vulpine Icon" width={48} height={48} />}
               title="Vulpine"
               subtitle="Contracting + Lead Generation"
-              text="Our contracting arm and sales engine. Vulpine builds pipelines, connects opportunities, and scales compliant acquisition systems." />
+              text="Our lead generation and customer communication platform. Vulpine provides contracting and service businesses with compliant messaging systems for client acquisition." />
             <DivisionCard
               icon={<Image src="/images/refacekit-icon.png" alt="RefaceKit Icon" width={48} height={48} />}
               title="RefaceKit"
               subtitle="Manufacturing + Cabinetry"
-              text="Our proof-of-concept in physical industries. RefaceKit shows how systematic innovation transforms traditional manufacturing." />
+              text="Our manufacturing communication suite — a proven case study demonstrating platform capabilities. RefaceKit shows how our SaaS solutions transform traditional manufacturing communications." />
           </div>
         </div>
       </section>

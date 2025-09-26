@@ -21,12 +21,12 @@ export default function HomePage() {
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-lg">
-            Strategic Network <span className="text-accent">Revenue Growth</span>
+            Enterprise Telephony & <span className="text-accent">AI Automation Platform</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            AI + Automation · Arbitrage & High-Frequency Trading · Contracting & Manufacturing
+            B2B SaaS platform providing compliant business communications for contractors, manufacturers, and service providers
           </p>
-          <p className="text-lg text-accent italic font-medium">— It all starts in the Lab</p>
+          <p className="text-lg text-accent italic font-medium">— Appointment confirmations, customer notifications, and lead alerts for enterprise clients</p>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <Button
               size="lg"
@@ -51,9 +51,9 @@ export default function HomePage() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Divisions</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Our Platform Solutions</h2>
             <p className="text-lg text-white/80 max-w-3xl mx-auto">
-              Four specialized divisions working together to create scalable growth systems.
+              Four integrated modules powering compliant communication systems for enterprise clients.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -61,25 +61,25 @@ export default function HomePage() {
               icon={<Image src="/images/aeon-icon.png" alt="AEON Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="AEON"
               subtitle="The Advanced Efficient Optimized Network"
-              description="AI operating system + automation brain powering intelligent decision-making across all divisions."
+              description="Enterprise AI automation platform powering intelligent communication workflows for client businesses."
             />
             <DivisionCard
               icon={<Image src="/images/atom-icon.png" alt="ATOM Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="ATOM"
-              subtitle="Arbitrage Trustless On-chain Module"
-              description="Advanced arbitrage + high-frequency trading engine leveraging market inefficiencies."
+              subtitle="Analytics & Optimization Module (Internal Case Study)"
+              description="Data analytics and optimization engine - our internal case study for financial sector implementations."
             />
             <DivisionCard
               icon={<Image src="/images/vulpine-icon.png" alt="Vulpine Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="Vulpine"
               subtitle="Contracting + Lead Generation"
-              description="Strategic contracting arm with advanced lead generation systems and client acquisition."
+              description="Lead generation and customer communication platform designed for contracting and service businesses."
             />
             <DivisionCard
               icon={<Image src="/images/refacekit-icon.png" alt="RefaceKit Icon" width={32} height={32} className="group-hover:opacity-80 transition-opacity" />}
               title="RefaceKit"
               subtitle="Manufacturing + Cabinetry"
-              description="Manufacturing division specializing in cabinetry refacing — our proven case study in scalable operations."
+              description="Manufacturing communication suite — our proven case study demonstrating platform capabilities in physical industries."
             />
           </div>
         </div>

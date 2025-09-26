@@ -152,7 +152,7 @@ export default function ContactPage() {
                       className="mt-1 border-white/20 data-[state=checked]:bg-accent data-[state=checked]:border-accent"
                     />
                     <Label htmlFor="consent" className="text-sm text-white/80 leading-relaxed">
-                      I agree to receive SMS/email communications from SNRG Labs. Message & data rates may apply. 
+                      I agree to receive appointment confirmations, customer notifications, and lead alerts from SNRG Labs. Message & data rates may apply. 
                       Reply <span className="text-accent font-semibold">STOP</span> to opt out. *
                     </Label>
                   </div>
